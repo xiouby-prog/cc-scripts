@@ -15,7 +15,7 @@ while true do
             if fluid1 and fluid2 then
                 if (fluid1.amount == 1000) and (fluid2.amount == 1000) then
                     rs.setOutput("bottom", false)
-                print(rs.getAnalogInput("bottom"))
+                    print("signal:" .. rs.getAnalogInput("bottom"))
                 end
             end
         end
