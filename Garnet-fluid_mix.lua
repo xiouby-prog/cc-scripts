@@ -7,6 +7,7 @@ rs.setOutput("bottom", true)
 while true do
     local ok, err = pcall(function()
         if runtime == 0 then
+            print("0")
             rs.setOutput("bottom", true)
             local fluids = tank.tanks()
             local fluid1 = fluids[1]
@@ -19,6 +20,7 @@ while true do
             end
         end
         if runtime == 1 then
+            print("1")
             if rs.getAnalogInput("bottom") == 0 then
                 tank.pushFluid("back", 1000, "tfg:cr_y_pregnant_liquor")
                 tank.pushFluid("back", 1000, "tfg:lean_organic")
