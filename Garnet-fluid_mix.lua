@@ -26,6 +26,7 @@ while true do
                 tank.pushFluid("back", 1000, "tfg:lean_organic")
             end
         end
+        sleep(0)
     end)
     if not ok then
         printError("执行出错: " .. tostring(err))
