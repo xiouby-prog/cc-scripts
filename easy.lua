@@ -8,7 +8,7 @@ while true do
     local fluid2 = fluids[2]
     if signal and (fluid1 and fluid2) then
         print("ok")
-        if (fluid1 == 1000) and (fluid2 == 1000) then
+        if (fluid1.amount == 1000) and (fluid2.amount == 1000) then
             tank.pushFluid("back", 1000, "tfg:cr_y_pregnant_liquor")
             tank.pushFluid("back", 1000, "tfg:lean_organic")
         else
